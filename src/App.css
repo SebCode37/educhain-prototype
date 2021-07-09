@@ -42,7 +42,7 @@ button + button {
 
 @media (max-width: 600px) {
   .Mobile {
-    zoom: 62%;
+    zoom: 55%;
   }
 }
 
@@ -342,13 +342,17 @@ button + button {
 }
 
 .ProofBar {
-  padding-top: 1px;
   background-color: #484848;
   border-radius: 6px;
-  height: 140px;
+  height: 75px;
   width: 97%;
   margin-left: 5px;
   margin-top: 15px;
+  padding: 1px;
+}
+
+.Attr{
+  margin-top: -20px;
 }
 
 .Push{

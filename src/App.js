@@ -35,7 +35,8 @@ class App extends React.Component {
       proofHash: "",
       proofInfo: "",
       proofName: "",
-      proofMessage: "Der Datennachweis wurde erzeugt und kann nun abgerufen werden."
+      proofMessage: "Der Datennachweis wurde erzeugt und kann nun abgerufen werden.",
+      firsttime: true
     }
   }
 
@@ -220,19 +221,19 @@ class App extends React.Component {
               <div id="proofResult" className="FunctionBar Hide">     
                 <div className="ProofBar">
                   <h4>Einreichedatum: </h4>
-                  <p>{proofDate}</p>
+                  <p className="Attr">{proofDate}</p>
                 </div>    
                 <div className="ProofBar">
                 <h4>Addresse: </h4>
-                  <p>{proofAddress}</p>
+                  <p className="Attr">{proofAddress}</p>
                 </div>
                 <div className="ProofBar">
                 <h4>Beschreibung: </h4>
-                  <p>{proofInfo}</p>
+                  <p className="Attr">{proofInfo}</p>
                 </div>    
                 <div className="ProofBar">
                 <h4>Name: </h4>
-                  <p>{proofName}</p>
+                  <p className="Attr">{proofName}</p>
                 </div>    
                 <button className="BackButton Full" onClick={() => this.refreshPage()}><span>zurück zum Hauptmenü</span></button>
               </div>
@@ -478,8 +479,16 @@ class App extends React.Component {
       var result = await operator.methods.getAddress(hash).call();
       // no address for file
       if(result === "0x0000000000000000000000000000000000000000"){
-        this.setState({ message: "Diese Datei wurde noch nicht mit einem Datennachweis im System versehen" });
-        message.style.display = "block";
+        if(this.state.firsttime){
+          this.proofData();
+          this.setState({ firsttime: false });
+          this.setState({ message: "Dein Datennachweis wird angefragt" });
+          message.style.display = "block";
+        }
+        else{
+          this.setState({ message: "Diese Datei wurde noch nicht mit einem Datennachweis im System versehen" });
+          message.style.display = "block";
+        }
       }
       // valid data proof
       else{
@@ -498,7 +507,7 @@ class App extends React.Component {
    */  
   getData = async () =>{
     const { web3 } = this.state;
-
+    this.setState({ firsttime: true });
     document.getElementById("proof").style.display = "none";
 
     this.setState({ message: "Datennachweis wird abgerufen" });

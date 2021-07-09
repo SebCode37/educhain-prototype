@@ -1,0 +1,86 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"name": "info",
+				"type": "string"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "createDataProof",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_dataProofAddress",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "clone",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "info",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "name",
+				"type": "string"
+			}
+		],
+		"name": "proofCreated",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "hash",
+				"type": "string"
+			}
+		],
+		"name": "getAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

@@ -1,0 +1,372 @@
+/**
+ * Custom Tags
+ * ordered by use
+ */
+input {
+  width: 97.5%;
+  background-color: #484848;
+  padding: 12px 20px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  border-color: #AFA190;
+  box-sizing: border-box;
+  color: #fce6bc;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+/**
+ * React ClassNames
+ * ordered by use
+ */
+
+ .App {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 700px;
+  margin: auto;
+  margin-top: 5%;
+  overflow: hidden;
+  color: #fce6bc;
+
+}
+
+@media (max-width: 600px) {
+  .Mobile {
+    zoom: 62%;
+  }
+}
+
+.OptionWindow {
+  background-color: #484848;
+  padding: 10px;
+  width: 120px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  float: left;
+  height: 130px;
+}
+
+.OptionButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #fce6bc;
+  border: none;
+  color: black;
+  padding: 9px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Container {
+  background-color: #484848;
+  width: 500px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 10px;
+  float: left;
+}
+
+.WalletStatusContainer {
+  width: 100%;
+  background-color: #fce6bc;
+  border-radius: 6px;
+  color: black;
+}
+
+.WalletStatusBar {
+  border-radius: 6px;
+  margin: 0 auto;
+  display: table;
+}
+
+.WalletStatusLeft {
+  position: absolute;
+}
+
+.MetamaskPicture {
+  width: 15px;
+  padding-top: 17px;
+}
+
+.WalletStatusRight {
+  float: left;
+  padding-left: 20px;
+  position: inline-block;
+}
+
+.StatusBarText {
+  text-align: left;
+}
+
+.WalletOverview {
+  background-color: #6b6b6b;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.WalletHeading {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.Author{
+  font-size: 15px;
+}
+
+.Educhain {
+  background-color: #6b6b6b;
+  padding: 10px;
+  border-radius: 6px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.FunctionBar {
+  background-color:#6b6b6b;
+  padding: 10px;
+}
+
+.Hide{
+  display: none;
+}
+
+.StartButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #fce6bc;
+  border: none;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s;
+  width: 48%;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.StartButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.StartButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.StartButton:hover span {
+  padding-right: 25px;
+}
+
+.StartButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.AddressBar {
+  padding-top: 1px;
+  background-color: #484848;
+  border-radius: 6px;
+  height: 85px;
+  width: 97.5%;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.FullSizeForwardButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #fce6bc;
+  border: none;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s;
+  margin-top: 15px;
+  margin-left: 0px;
+  width: 97.5%;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.FullSizeForwardButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.FullSizeForwardButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.FullSizeForwardButton:hover span {
+  padding-right: 25px;
+}
+
+.FullSizeForwardButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.Bar {
+  display: none;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #484848;
+  border-radius: 6px;
+  height: 70px;
+  width: 93%;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.Red {
+  color: red;
+}
+
+.BackButton {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #fce6bc;
+  border: none;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s;
+  margin-top: 15px;
+  margin-left: 0px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.BackButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.BackButton span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.BackButton:hover span {
+  padding-left: 25px;
+}
+
+.BackButton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.MediumButton{
+  width: 97%;
+}
+
+.EduchainStatusBar {
+  background-color: #484848;
+  border-radius: 6px;
+  height: 170px;
+  width: 97.5%;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.Picture {
+  width: 20%;
+  margin-left: -50px;
+  padding-top: 50px;
+  position: absolute;
+}
+
+.PicturePulse{
+  animation: anim 2s infinite alternate;
+}
+
+.Message{
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+.FinalScreen {
+  margin-top: 15px;
+}
+
+.TokenBar {
+  padding-top: 1px;
+  background-color: #484848;
+  border-radius: 6px;
+  height: 140px;
+  width: 90%;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ProofBar {
+  padding-top: 1px;
+  background-color: #484848;
+  border-radius: 6px;
+  height: 140px;
+  width: 97%;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+.Push{
+  margin-left: 5px;
+}
+
+/**
+ * Keyframe Values for Animation
+ */
+
+@keyframes anim {
+  0% {
+    opacity: .2;
+    z-index: .2;
+  }
+  
+  100% {
+    opacity: 1;
+    z-index: 1
+  }
+}

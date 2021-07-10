@@ -219,7 +219,7 @@ class App extends React.Component {
                 <button className="FullSizeForwardButton" onClick={() => this.getToken()}><span>Token aushändigen lassen</span></button>
               </div>
               <div id="proofResult" className="FunctionBar Hide">     
-                <div className="ProofBar">
+                <div className="DateBar">
                   <h4>Einreichedatum: </h4>
                   <p className="Attr">{proofDate}</p>
                 </div>    

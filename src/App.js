@@ -516,18 +516,10 @@ class App extends React.Component {
 
     const dataProof = new web3.eth.Contract(DataProofABI, dataAddress);
     var datumraw = await dataProof.methods.time.call().call();
-    var datum = new Date(datumraw * 1000);
-
-    var stunde = datum.getHours();
-    var minute = datum.getMinutes();
-    var tag = datum.getDay();
-    var monat = datum.getMonth();
-    var jahr = datum.getFullYear();
-
-    var vollesdatum = stunde + ":"+minute + " Uhr am "+tag+"."+monat+"."+jahr;
+    var datum = new Date(datumraw * 1000).toString();
     
     this.setState({ proofAddress : await dataProof.methods.userAddress.call().call() });
-    this.setState({ proofDate : vollesdatum});
+    this.setState({ proofDate : datum});
     this.setState({ proofInfo : await dataProof.methods.info.call().call() });
     this.setState({ proofName : await dataProof.methods.name.call().call() });
 

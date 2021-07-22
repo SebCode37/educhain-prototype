@@ -135,11 +135,11 @@ class App extends React.Component {
         <div>
             <button className="OptionButton" onClick={() => this.refreshPage()}>Startseite</button>
           </div>
-          <p></p>
+          <span></span>
           <div>
             <button className="OptionButton" onClick={() => this.toggleData()}>Datennachweis</button>
           </div>
-          <p></p>
+          <span></span>
           <div>
             <button className="OptionButton" onClick={() => this.toggleToken()}>Tokenerhalt</button>
           </div>

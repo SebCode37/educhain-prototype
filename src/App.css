@@ -43,7 +43,6 @@ button + button {
 @media (max-width: 600px) {
   .Mobile {
     zoom: 55%;
-    font-size: x-small;
   }
 }
 
@@ -64,8 +63,7 @@ button + button {
   border: none;
   color: black;
   padding: 9px;
-  max-width: 130px;
-  min-width: 130px;
+  width: 130px;
   transition: all 0.5s;
   cursor: pointer;
   font-family: 'Courier New', Courier, monospace;

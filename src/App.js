@@ -137,11 +137,11 @@ class App extends React.Component {
           </div>
           <span></span>
           <div>
-            <button className="OptionButton" onClick={() => this.toggleData()}>Datennachweis</button>
+            <button className="OptionButton FollowedButton" onClick={() => this.toggleData()}>Nachweis</button>
           </div>
           <span></span>
           <div>
-            <button className="OptionButton" onClick={() => this.toggleToken()}>Tokenerhalt</button>
+            <button className="OptionButton FollowedButton" onClick={() => this.toggleToken()}>Tokenerhalt</button>
           </div>
         </div>
         <div className="Container">

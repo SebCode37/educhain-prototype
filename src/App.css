@@ -69,6 +69,10 @@ button + button {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.FollowedButton{
+  margin-top: 15px;
+}
+
 .Container {
   background-color: #484848;
   width: 500px;

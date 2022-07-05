@@ -10,18 +10,16 @@ The prototype is one utility of the Educhain concept which can be used to create
 
 [Live Application](https://educhain-mw.netlify.app/)
 
-## Prototype Flow
-
-![Prototype Flow](./img/prototype_flow.png)
-
-## Design Pattern
-
-![Design Pattern](./img/design_pattern.png)
-
 ## Data Proof Showcase
 
 ![Screenshot 1](./img/screenshot_01.png)
 ![Screenshot 2](./img/screenshot_02.png)
+
+## Tech Flows
+
+![Prototype Flow](./img/prototype_flow.png)
+
+![Design Pattern](./img/design_pattern.png)
 
 ## Run locally
 

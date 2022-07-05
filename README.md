@@ -16,7 +16,7 @@ The prototype is one utility of the Educhain concept which can be used to create
 
 ## Design Pattern
 
-![Prototype Flow](./img/prototype_flow.png)
+![Design Pattern](./img/design_pattern.png)
 
 ## Data Proof Showcase
 

@@ -1,4 +1,4 @@
-# educhain_prototype
+# educhain-prototype
 
 This codebase is a prototype of the Educhain project which was developed by Felix Hildebrandt and Sebastian Wunderlich during their master studies on the University of Applied Sciences Mittweida. It aims to integrate blockchain technology at universities in order to facilitate processes.
 

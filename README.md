@@ -4,6 +4,8 @@ This codebase is a prototype of the Educhain project which was developed by Feli
 
 The prototype is one utility of the Educhain concept which can be used to create file proofs for documents that need to be managed by the proffessorship and issue tokens for IRL benefits at the presentation that took place in 2021.
 
+> **_NOTE:_** The commentary and filenames might appear in German.
+
 ## Links
 
 [Educhain Webpage](https://educhain-mw.de/)

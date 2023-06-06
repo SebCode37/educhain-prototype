@@ -23,8 +23,8 @@ The goal was to manage university user accounts using [ERC725](https://eips.ethe
 
 ## Data Proof Prototype Showcase
 
-![Screenshot 1](./img/screenshot_01.png)
-![Screenshot 2](./img/screenshot_02.png)
+![Screenshot 1](./img/screenshot_1.png)
+![Screenshot 2](./img/screenshot_2.png)
 
 ### Verification Workflow
 

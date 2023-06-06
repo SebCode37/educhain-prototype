@@ -6,30 +6,44 @@ The prototype is one utility of the Educhain concept which can be used to create
 
 > **_NOTE:_** The commentary and filenames might appear in German.
 
+## Project Description
+
+![](/img/educhain-webpage.png)
+
+The goal of the proof of concept project was to be able to use student ID cards across universities and devices, to validate data exchange between students and professorships in a matter of seconds, to control lockers and locks digitally, and to securely pay for services at colleges and universities such as the refectory from a smartphone. With a network of participating colleges and universities, students can use various services from external universities. This principle is similar to the eduroam solution, widely used today, and ensures Internet access across universities.
+
+The goal was to manage university user accounts using [ERC725](https://eips.ethereum.org/EIPS/eip-725), allowing students and staff to manage their responsibilities, such as claims, proofs, payments, and even physical access controls, like opening doors, using account signatures.
+
 ## Links
 
-[Educhain Webpage](https://educhain-mw.de/)
+- [Educhain Webpage](https://educhain-mw.de/)
+- [Prototype Application](https://educhain-mw.netlify.app/)
+- [Project Handout, 1 Page](https://educhain-mw.de/docs/educhain_abstract.pdf)
+- [Full Project Paper, 110 Pages](https://educhain-mw.de/docs/educhain_technical_paper.pdf)
 
-[Live Application](https://educhain-mw.netlify.app/)
-
-## Data Proof Showcase
+## Data Proof Prototype Showcase
 
 ![Screenshot 1](./img/screenshot_01.png)
 ![Screenshot 2](./img/screenshot_02.png)
 
-## Tech Flows
+### Verification Workflow
 
 ![Prototype Flow](./img/prototype_flow.png)
 
+### Contract Clone Pattern
+
 ![Design Pattern](./img/design_pattern.png)
 
-## Run locally
+## Development
 
-### Init:
+#### Initialize the project
+
 `cd educhain_prototype && npm i`
 
-### Development: 
+#### Run the project locally
+
 `npm start`
 
-### Production:
+#### Create a production build
+
 `npm run build`
